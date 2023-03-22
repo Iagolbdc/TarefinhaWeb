@@ -1,4 +1,4 @@
-/*
+
 let usuarios = []
 let p = document.getElementsByTagName('p')
 
@@ -17,6 +17,7 @@ function Cadastrar(){
      }
     usuarios.push(usuario)
     localStorage.setItem('cadastrados', JSON.stringify(usuarios))
+    location.assign('login.html')
     }
     if(nome.length > 2 || nome.trim().length != 0 ){
         p[0].innerHTML = 'O nome precisa ter ao menos 3 caracters'
@@ -30,8 +31,15 @@ function Cadastrar(){
             p[1].innerHTML = ''
         }, 3000)
     }
-}*/
+}
 
+function Login(){
+    let string = localStorage.getItem('cadastrados')
+    console.log(JSON.parse(string))
+}
+
+
+/*
 let arr = ['asda', 'adfasda', 'sdfsdf']
 
 arr.forEach(item=>{
@@ -39,7 +47,9 @@ arr.forEach(item=>{
 })
 
 let posicao = arr.findIndex((item) =>{
-    return item == 'genevova'
+    return item 
 })
 
 document.write(posicao)
+
+*/
