@@ -14,3 +14,17 @@ main{
     margin: auto;
     gap: 10px;
 }
+
+.erroSintaxe{
+    font-size: 10px;
+    color: red;
+}
+
+.loginUsuario{
+    display: flex;
+    justify-content: center;
+}
+
+.loginUsuario p,a{
+    font-size: 15px;
+}
