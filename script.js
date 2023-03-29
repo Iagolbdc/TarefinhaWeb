@@ -56,6 +56,7 @@
 
 let usuarios = []
 let p = document.getElementsByTagName('p')
+let data = new Date()
 
 if(localStorage.getItem('cadastrados')){
     usuarios = JSON.parse(localStorage.getItem('cadastrados'))
@@ -67,7 +68,8 @@ function Cadastrar(){
 
     let usuario = {
         nome: guardaNome.toLowerCase().trim(),
-        senha: guardaSenha.trim()
+        senha: guardaSenha.trim(),
+        dataDeCriacao: `${data.getDate()}/${data.getMonth()}/${data.getFullYear()}`
     }
     
     if(guardaNome.length > 2 && guardaSenha.length >= 8 && guardaNome.trim().length != 0 && guardaSenha.trim().length != 0
