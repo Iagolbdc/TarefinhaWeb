@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
-
+    
 }
 
 main{
@@ -12,7 +12,7 @@ main{
     display: flex;
     flex-flow: column;
     margin: auto;
-    gap: 10px;
+    gap: 30px;
 }
 
 .erroSintaxe{
